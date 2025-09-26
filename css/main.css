@@ -1,0 +1,380 @@
+  @charset "utf-8";
+
+main{}
+/* 01.비주얼 */
+main > #main_visual{
+  position:relative;
+  width:100%;
+  /* overflow: hidden; */
+}
+main > #main_visual .swiper{
+  width:100%;height:85vh;
+}
+main > #main_visual > h2{
+  display:none;
+}
+main > #main_visual img{
+  display:block;
+  width:100%;
+}
+.mySwiper .swiper-slide > div{
+    position:relative;
+    width:1000px;
+    height:1000px;
+      left:100px;bottom:400px;
+      /* transform:translate(-100px, -25px); */
+}
+.mySwiper .swiper-slide > div> p{
+  position:absolute;
+  /* display: block; */
+  top:100px;
+  left:100px;
+  font-size:36px;
+  line-height: 160%;
+  font-weight: bold;
+  color:#fff;
+  /* position:absolute; */
+  animation: m_ani infinite 4s;
+  z-index: 1000;
+}
+.mySwiper .swiper-slide h3{
+  position:absolute;
+  width:550px;
+  line-height: 160%;
+  top:-150px;left:100px;
+  font-size:64px;
+  font-weight: bold;
+  color:#fff;
+  /* position:relative; */
+  /* animation: m_ani2 infinite 4s; */
+}
+@keyframes m_ani{
+      0%{transform: translateY(200px); opacity: 0;}
+      /* 50%{top:0px;} */
+      100%{transform: translateY(-150px);
+      opacity: 1;}
+}
+
+#v_04{
+  filter: brightness(0.8);
+}
+
+
+/* 02.브랜드 제품 - beautiful */
+
+article > h2, section > h2{
+  font-size:24px;
+  text-align:center;
+  padding-top:95px;
+  padding-bottom:65px;
+  z-index: 1;
+}
+
+main > #beautiful
+{
+  width:1440px;
+  height:750px;
+  position:relative;
+  margin:0 auto;
+}
+main > #beautiful  ul{
+  /* position:absolute; */
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+main > #beautiful  ul >li{
+width:400px;height:400px;
+  position:relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+main > #beautiful  ul >li >a{
+position: absolute;
+  /* text-align: center; */
+}
+main > #beautiful  ul >li >a > img{
+  transition:0.5s;
+}
+main > #beautiful  ul >li > a:hover{
+}
+main > #beautiful  ul >li > a:hover > img{
+  filter: brightness(0.7);
+  transform: scale(1.2);
+}
+main > #beautiful  ul >li > a:hover >img + p{
+  display:none;
+}
+/* main > .beautiful  ul >li > a >img:hover +  */
+main > #beautiful  ul >li > a:hover > div{
+  display:block;
+}
+#beautiful  ul >li > a >img:hover{} 
+#beautiful  ul >li > a > p{
+  position:absolute;
+  top:50%;left:50%;
+  transform: translate(-50%,400%);
+  color:#fff;
+  font-size:30px;
+  font-weight: bold;
+  
+}
+main > #beautiful  ul >li > a > div{
+position:absolute;
+width:400px;
+top:50%;left:50%;
+transform: translate(-50%,-50%);
+line-height:160%;
+color:#fff;
+font-size: 25px;
+text-align: center;
+display:none;
+} 
+.btn_b{
+  margin:0 auto;
+  border-radius: 20px;
+  background-color: #C40452;
+  /* border: 1px solid #fff; */
+  font-size:13px;
+  width:120px;
+  line-height: 40px;
+  display:block;
+}
+.name{
+  color:#C40452 !important;
+  font-weight: bold;
+}
+
+main > #beautiful > #btn01{
+  width:1440px;
+  padding-top:50px;
+}
+main > #beautiful > #btn01:hover{
+  text-decoration: underline;
+}
+main > #beautiful > #btn01 >a{
+  width:150px;height:40px;
+  text-align: center;
+  line-height: 40px;
+  border:1px solid #6D6E71;
+  border-radius: 50px;
+  margin:0 auto;
+  display:block;
+}
+
+/* 03.브랜드제품-refreshing */
+.refresh{}
+.refresh > .swiper-wrapper > .swiper-slide{
+  position: relative;
+}
+.refresh > .swiper-wrapper > .swiper-slide img{
+  border-radius: 20px;
+}
+
+.refresh > .swiper-wrapper > .swiper-slide > p{
+  position:absolute;
+  top:80%;
+  color:#fff;
+  animation: ani infinite 3s;
+  font-size: 20px;
+}
+
+@keyframes ani{
+  0%{top:400px;}
+  50%{top:380px;}
+  100%{top:400px;}
+}
+
+.refresh > .swiper-wrapper > .swiper-slide {
+    /* height: 930px; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.refresh img{
+  width:960px;height:465px;
+}
+#refreshing .swiper-button-next{
+  margin-right:150px;
+}
+#refreshing .swiper-button-prev{
+  margin-left:150px;
+}
+/* 04. 브랜드제품-healthy */
+.healthy{
+  margin:0 auto;
+  width:1440px;
+  overflow: hidden;
+  padding-bottom: 100px;
+  
+}
+.healthy ul{
+  width:2500px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.healthy ul > li{
+width:400px;}
+
+.custom-active{
+}
+
+.custom-active:active{
+  filter:grayscale(0%);
+}
+.healthy ul > li > a{
+width:100%
+}
+.healthy ul > li > a > img{
+width:100%;
+border-radius: 20px;
+transition: 0.5s;
+filter:grayscale(100%);
+transform:scale(0.7);
+}
+.healthy ul > li > a > p{
+  text-align: center;
+}
+/* 할아버지의 자손(swiper-wrapper)의 li에 active서식이 적용된 다음 요소 li의 자손 img를 선택하여 컬러색, 크기 변경 */
+.healthy .swiper-wrapper li.swiper-slide-active + li img{
+  filter: grayscale(0);
+  transform: scale(1);
+}
+.healthy > .swiper-pagination{
+top:530px;
+}
+/* 05. ESG 영역 */
+#esg{
+  /* overflow: hidden; */
+  /* position: relative; */
+  width:1440px;
+  margin:0 auto;
+  /* display: flex; */
+  /* gap:30px; */
+}
+
+#esg > h2{
+  width:100%;
+  /* position: absolute; */
+  /* z-index: 1000; */
+  text-align: right;
+  top:0px;right:0px;
+}
+.ESG_swiper{
+  height:500px;
+  /* top:50px; */
+  overflow: hidden;
+}
+#esg .swiper-slide{
+  top:0px;
+  /* padding-top:180px; */
+  height:100%;
+  /* left:200px; */
+  display:flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+#esg > .ESG_swiper .swiper-slide > div{
+  /* display:flex; */
+  /* width:600px; */
+  /* padding-right:100px; */
+  /* padding-top:100px; */
+}
+#esg > .ESG_swiper .swiper-slide h3, .esg > .ESG_swiper .swiper-slide p{
+  float:left;
+  width:500px;
+  clear:left;
+}
+#esg h3{
+  font-size:20px;
+  /* padding-top:50px; */
+}
+.esg_img{
+  /* padding-top:100px; */
+  /* object-fit:cover; */
+  width:300px;height:300px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.5s;
+  /* line-height:px; */
+}
+.esg_img:hover{
+  width:683px;height:100%;
+  border-radius: 0px;
+}
+#esg > .ESG_swiper .swiper-slide p{
+  padding-right:30px;
+  white-space: normal;   
+  max-width: 500px;       
+  word-break: keep-all;
+  padding-top: 100px;
+  text-align: left;
+  }
+/* 06.news */
+#news{
+  /* padding-top:50px; */
+  padding-bottom:50px;
+  width:1440px;
+  margin:0 auto;
+  /* position: relative; */
+}
+#news > h2{
+  text-align: left;
+}
+#news > .new{}
+#news > .new > a{
+  display:flex;
+
+}
+#news > .new > a >.news_img{
+  position: relative;
+  margin-left: 20px;
+  width:640px;height:400px;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+#news > .new > a > .news_img > img{
+  position: absolute;
+  width:640px;height: 100%;
+  transition: 1s; 
+}
+#news > .new > a > .news_img >img:hover{
+  transform: scale(1.1);
+}
+#news > .new > a > .news_txt{
+  width:600px;
+  line-height: 160%;
+  right:0px; 
+  padding-left:150px;
+}
+#news > .new > a > div > h3:hover{
+  text-decoration: underline;
+}
+#news > .new > a > div > p:hover{
+  text-decoration: underline;
+}
+#news h3{
+  font-size:20px;
+  padding-bottom:50px;
+  text-align: center;
+}
+#news > .new > #btn02{
+  width:1440px;
+  display:flex;
+  position: absolute;
+  right:-1080px;
+}
+#news > .new > #btn02 > a{
+  width:80px;height:20px;
+  text-align: center;
+  line-height: 20px;
+  border:1px solid #6D6E71;
+  border-radius: 50px;
+  display:block;
+}
+#news > .new > #btn02 > a:hover{
+  text-decoration: underline;
+}
