@@ -1,0 +1,36 @@
+
+2. 파비콘  16*16
+ favorite(즐겨찾기) + icon(아이콘) = favicon
+ 아이콘 - .ico
+
+1. 이미지파일로 제작후 아이콘변환사이트에서 제작하여 저장
+2. https://icoconvert.com 접속후
+3. 저장한 이미지파일 업로드
+4. 아래 저장옵션에서 'favicon icon for your website'항목을 체크하고
+5. 'convert ico'버튼을 클릭한다.
+6. 'download your icon(s)'메뉴로 저장
+7. 저장된 이미지를 사이트 제작한 폴더 'image'폴더로 옮겨저장한다.
+8. index.html문서를 vs code에서 열고
+head영역 안에 아래 소스코드로 파비콘을 연결한다.
+title태그 바로아래에 작성
+<!--  파비콘 이미지 삽입하기 -->
+<link rel="shortcut icon" type="image/x-icon" href="./img/favicon_5.ico" >
+
+---- 목업다운로드 ----------------------------------------------------
+https://www.ls.graphics/free-mockups
+http://graphicburger.com
+http://alienvalley.com/freebies
+http://www.freebiespsd.com
+http://www.pixeden.com/free-graphics
+
+----- 이미지찾기 --------------------------------------------------------------
+고화질 이미지 - 픽사베이
+http://graphicburger.com
+http://alienvalley.com/freebies
+http://www.freebiespsd.com
+http://www.pixeden.com/free-graphics
+
+
+
+
+
